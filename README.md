@@ -1,3 +1,3 @@
 # Practice
-Coding Practice (Python)
-060724~
+Coding Practice
+060724
