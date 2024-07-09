@@ -3,7 +3,7 @@ import sys
 def Josephus(queue, k):
     result = list()
     idx = k-1
-    for i in range(len(queue)):
+    for _ in range(len(queue)):
         if (len(queue) > idx):
             result.append(queue.pop(idx))
             idx += k-1
