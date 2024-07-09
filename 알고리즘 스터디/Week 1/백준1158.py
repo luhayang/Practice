@@ -2,15 +2,15 @@ import sys
 
 def Josephus(queue, k):
     result = list()
-    num = k-1
+    idx = k-1
     for i in range(len(queue)):
-        if (len(queue) > num):
-            result.append(queue.pop(num))
-            num += k-1
+        if (len(queue) > idx):
+            result.append(queue.pop(idx))
+            idx += k-1
         else:
-            num = num%len(queue)
-            result.append(queue.pop(num))
-            num += k-1
+            idx = idx%len(queue)
+            result.append(queue.pop(idx))
+            idx += k-1
     return result
 
 if __name__ == "__main__":
