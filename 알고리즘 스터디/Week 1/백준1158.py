@@ -19,8 +19,4 @@ if __name__ == "__main__":
     for i in range(1, n+1):
         queue.append(i)
     result = Josephus(queue, k)
-    print("<", end = '')
-    for i in range(n):
-        if (i!= n-1):
-            print(f"{result[i]}, ", end = '')
-        else: print(f"{result[i]}>", end = '')
+    print(f"<{', '.join(map(str, result))}>")
