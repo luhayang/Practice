@@ -6,7 +6,7 @@ result = []
 def check():
     length = len(result)
     for i in range(1, length//2 +1):
-        if result[-i:] == result[- 2*i : -i]:
+        if result[-i:] == result[-2*i : -i]:
             return False
     return True
 
